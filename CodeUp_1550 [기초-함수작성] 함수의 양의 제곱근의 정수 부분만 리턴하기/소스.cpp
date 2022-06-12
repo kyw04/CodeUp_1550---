@@ -15,13 +15,9 @@ int sqrt(long long int n)
 		if (result == n)
 			return mid;
 		else if (result < n)
-		{
 			left = mid + 1;
-		}
 		else
-		{
 			right = mid - 1;
-		}
 		mid = (left + right) / 2;
 	}
 	return mid;
